@@ -18,22 +18,23 @@
             <ul class="nav__link--list">
                 <li class="nav__link">
 
-                    <a href="#" class="nav__link--anchor">About</a>
+                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
 
                 </li>
                 <li class="nav__link">
 
-                    <a href="#" class="nav__link--anchor">Project</a>
+                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Project</a>
 
                 </li>
                 <li class="nav__link">
 
-                    <a href="#" class="nav__link--anchor">Contact</a>
+                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
 
                 </li>
                 <li class="nav__link click">
 
-                    <a href="#" class="nav__link--anchor"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i
+                            class="fa-solid fa-circle-half-stroke"></i></a>
 
                 </li>
             </ul>
@@ -70,6 +71,18 @@ kojo-abdulai-a02b8a338" target="_blank" class="social__link click"><i class="fa-
 
 
         </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+                <p class="modal__para"></p>
+                <div class="modal__languages"></div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact"></h3>
+                <h3 class="modal__sub-title modal__sub-title--contact"></h3>
+            </div>
+        </div>
 
     </section>
     <section id="projects">
@@ -87,11 +100,14 @@ kojo-abdulai-a02b8a338" target="_blank" class="social__link click"><i class="fa-
                                 <h3 class="project__description--title">E-Commerce</h3>
                                 <h4 class="project__description--sub-title">Html, CSS, JavaScript, React</h4>
                                 <p class="project__description--para">
-                                     Kojo E-Commerce is a fully responsive, front-end–only online store built with HTML5, CSS3 (Flexbox/Grid), and vanilla JavaScript (ES6+). It showcases a complete shopping experience—from product browsing and dynamic filtering to a client-side shopping cart (persisted via LocalStorage) and a simulated checkout flow.
+                                    Kojo E-Commerce is a fully responsive, front-end–only online store built with HTML5,
+                                    CSS3 (Flexbox/Grid), and vanilla JavaScript (ES6+). It showcases a complete shopping
+                                    experience—from product browsing and dynamic filtering to a client-side shopping
+                                    cart (persisted via LocalStorage) and a simulated checkout flow.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="https://github.com/abdujo" target="_blank" class="project__description--link"><i
-                                            class="fa-brands fa-github"></i></a>
+                                    <a href="https://github.com/abdujo" target="_blank"
+                                        class="project__description--link"><i class="fa-brands fa-github"></i></a>
                                     <a href="https://abdujo.github.io/Kojo_E-Commerce/" target="_blank"
                                         class="project__description--link"><i class="fa-solid fa-link"></i></a>
                                     <a href="" class="project__description--link"></a>
@@ -103,63 +119,77 @@ kojo-abdulai-a02b8a338" target="_blank" class="social__link click"><i class="fa-
 
                         </div>
                     </li>
-                <ul class="project__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="assets/google mockup.png" alt="" class="project__img">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">E-Portfolio</h3>
-                                <h4 class="project__description--sub-title">Html, CSS, JavaScript, React</h4>
-                                <p class="project__description--para">
-                                    A single-page, mobile-first personal portfolio created with HTML5, CSS3 (Flexbox/Grid), and vanilla JavaScript (ES6+), hosted on GitHub Pages. This site highlights my professional journey—introducing who I am, what I know, and the projects I’ve completed—through a polished, easy-to-navigate interface. It demonstrates my ability to build a fully responsive, accessible front-end application from scratch without relying on any external frameworks.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/abdujo" target="_blank" class="project__description--link"><i
-                                            class="fa-brands fa-github"></i></a>
-                                    <a href="https://abdujo.github.io/Kojo_E-Portfolio/"
-                                        class="project__description--link"><i class="fa-solid fa-link"></i></a>
-                                    <a href="" class="project__description--link"></a>
+                    <ul class="project__list">
+                        <li class="project">
+                            <div class="project__wrapper">
+                                <img src="assets/google mockup.png" alt="" class="project__img">
+                                <div class="project__wrapper--bg"></div>
+                                <div class="project__description">
+                                    <h3 class="project__description--title">E-Portfolio</h3>
+                                    <h4 class="project__description--sub-title">Html, CSS, JavaScript, React</h4>
+                                    <p class="project__description--para">
+                                        A single-page, mobile-first personal portfolio created with HTML5, CSS3
+                                        (Flexbox/Grid), and vanilla JavaScript (ES6+), hosted on GitHub Pages. This site
+                                        highlights my professional journey—introducing who I am, what I know, and the
+                                        projects I’ve completed—through a polished, easy-to-navigate interface. It
+                                        demonstrates my ability to build a fully responsive, accessible front-end
+                                        application from scratch without relying on any external frameworks.
+                                    </p>
+                                    <div class="project__description--links">
+                                        <a href="https://github.com/abdujo" target="_blank"
+                                            class="project__description--link"><i class="fa-brands fa-github"></i></a>
+                                        <a href="https://abdujo.github.io/Kojo_E-Portfolio/"
+                                            class="project__description--link"><i class="fa-solid fa-link"></i></a>
+                                        <a href="" class="project__description--link"></a>
+
+                                    </div>
 
                                 </div>
 
+
                             </div>
+                        </li>
+                        <ul class="project__list">
+                            <li class="project">
+                                <div class="project__wrapper">
+                                    <img src="assets/google mockup.png" alt="" class="project__img">
+                                    <div class="project__wrapper--bg"></div>
+                                    <div class="project__description">
+                                        <h3 class="project__description--title">Final Project</h3>
+                                        <h4 class="project__description--sub-title">Html, CSS, JavaScript, React</h4>
+                                        <p class="project__description--para">
+                                            Treact is a single-page, responsive marketing landing site designed to
+                                            showcase “Beautiful React Templates” (as a conceptual offering). Although
+                                            the name implies React, this project was built using plain HTML5, CSS3, and
+                                            vanilla JavaScript—no React framework was actually coded. Its purpose is to
+                                            demonstrate a polished, professional front-end layout, highlighting sections
+                                            such as a hero banner, feature overview, pricing tiers, customer
+                                            testimonials, and a contact form. Deployed on GitHub Pages, it underscores
+                                            my ability to assemble and style a modern, mobile-first web page from
+                                            scratch.
+                                        </p>
+                                        <div class="project__description--links">
+                                            <a href="https://github.com/abdujo" target="_blank"
+                                                class="project__description--link"><i
+                                                    class="fa-brands fa-github"></i></a>
+                                            <a href="https://abdujo.github.io/My_Final_-Project/" target="_blank"
+                                                class="project__description--link"><i class="fa-solid fa-link"></i></a>
+                                            <a href="" class="project__description--link"></a>
 
+                                        </div>
 
-                        </div>
-                    </li>
-                <ul class="project__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="assets/google mockup.png" alt="" class="project__img">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">Final Project</h3>
-                                <h4 class="project__description--sub-title">Html, CSS, JavaScript, React</h4>
-                                <p class="project__description--para">
-                                    Treact is a single-page, responsive marketing landing site designed to showcase “Beautiful React Templates” (as a conceptual offering). Although the name implies React, this project was built using plain HTML5, CSS3, and vanilla JavaScript—no React framework was actually coded. Its purpose is to demonstrate a polished, professional front-end layout, highlighting sections such as a hero banner, feature overview, pricing tiers, customer testimonials, and a contact form. Deployed on GitHub Pages, it underscores my ability to assemble and style a modern, mobile-first web page from scratch.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/abdujo" target="_blank" class="project__description--link"><i
-                                            class="fa-brands fa-github"></i></a>
-                                    <a href="https://abdujo.github.io/My_Final_-Project/" target="_blank"
-                                        class="project__description--link"><i class="fa-solid fa-link"></i></a>
-                                    <a href="" class="project__description--link"></a>
+                                    </div>
+
 
                                 </div>
+                            </li>
 
-                            </div>
-
-
-                        </div>
-                    </li>
-                
             </div>
         </div>
     </section>
     <footer>
         <div class="container">
-            <div class="row footer_row">
+            <div class="row footer__row">
                 <a href="#" class="footer__anchor">
                     <figure class="footer__logo">
                         <img src="assets/logo.svg" alt="" class="footer__logo--img">
@@ -176,8 +206,8 @@ kojo-abdulai-a02b8a338" target="_blank" class="social__link click"><i class="fa-
                 </div>
                 <div class="footer__copyright">Copyright © 2025 Kojo Abdulai.</div>
 
-                </div>
             </div>
+        </div>
         </div>
     </footer>
 
