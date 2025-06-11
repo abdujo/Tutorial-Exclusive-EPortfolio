@@ -421,7 +421,8 @@ textarea:focus {
     background-color: #242424;
 
     font-size: 80px;
-    z-index: -1;
+   
+
 }
 
 
@@ -439,6 +440,7 @@ textarea:focus {
         transform: rotate(360deg);
     }
 }
+
 .modal__overlay {
     position: absolute;
     top: 0;
@@ -448,13 +450,15 @@ textarea:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+    z-index: -1;
+
 }
 
 
 
-
+.modal__overlay--visible {
+    z-index: 1;
+}
 
 
 .modal__overlay--success {
@@ -463,7 +467,7 @@ textarea:focus {
     font-weight: 700;
     text-align: center;
     padding: 28px;
-    
+
 }
 
 

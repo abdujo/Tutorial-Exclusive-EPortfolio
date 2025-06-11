@@ -5,8 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kojo Abdulai</title>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/b2a5fc80b8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "P2iXEfxavJX4fyh-L",
+      });
+   })();
+</script>
 </head>
 
 <body>
@@ -118,18 +129,18 @@ kojo-abdulai-a02b8a338" target="_blank" class="social__link click"><i class="fa-
                 <i class="fa-solid fa-xmark modal__exit click"></i>
                 <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
                 <h3 class="modal__sub-title modal__sub-title--contact">I am currently open to new oppotunities.</h3>
-                <form action="" id="contact__form">
+                <form action="" id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label  class="form__item--lable">Name</label>
-                        <input type="text" class="input" name="user_name" required>
+                        <input type="text" class="input" name="user_name" >
                     </div>
                     <div class="form__item">
                         <label  class="form__item--lable">Email</label>
-                        <input type="email" class="input" name="user_email" required>
+                        <input type="email" class="input" name="user_email" >
                     </div>
                     <div class="form__item">
                         <label  class="form__item--lable">Message</label>
-                        <textarea name="message" id="" class="input" type="text" required></textarea>
+                        <textarea name="message" id="" class="input" type="text" ></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">send it my way</button>
                 </form>
