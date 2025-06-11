@@ -75,12 +75,68 @@ kojo-abdulai-a02b8a338" target="_blank" class="social__link click"><i class="fa-
             <div class="modal__half modal__about">
                 <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
                 <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
-                <p class="modal__para"></p>
-                <div class="modal__languages"></div>
+                <p class="modal__para">I'm an Innovative <b class="orange">Frontend Software Engineer</b> dedicated to
+                    creating seamless, high performance web experiences that <b class="orange"> inspire</b> and <b
+                        class="orange">transform</b>.
+                    <br>
+                    I currently solve extremely difficult engineering problems and learn from a team consisting of some
+                    of the most <b class="orange">talented</b> and <b class="orange">experienced</b> Software engineers
+                    everyday.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+
+                            <span class="language__name">CSS</span>
+                    </figure>
+
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+
+                            <span class="language__name">JavaScript</span>
+                    </figure>
+
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+
+                            <span class="language__name">React</span>
+                    </figure>
+
+                </div>
             </div>
             <div class="modal__half modal__contact">
-                <h3 class="modal__title modal__title--contact"></h3>
-                <h3 class="modal__sub-title modal__sub-title--contact"></h3>
+                <i class="fa-solid fa-xmark modal__exit click"></i>
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">I am currently open to new oppotunities.</h3>
+                <form action="" id="contact__form">
+                    <div class="form__item">
+                        <label  class="form__item--lable">Name</label>
+                        <input type="text" class="input" name="user_name" required>
+                    </div>
+                    <div class="form__item">
+                        <label  class="form__item--lable">Email</label>
+                        <input type="email" class="input" name="user_email" required>
+                    </div>
+                    <div class="form__item">
+                        <label  class="form__item--lable">Message</label>
+                        <textarea name="message" id="" class="input" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">send it my way</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fa-solid fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking to you soon</div>
             </div>
         </div>
 
