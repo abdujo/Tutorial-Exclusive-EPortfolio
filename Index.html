@@ -1,288 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kojo Abdulai</title>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/b2a5fc80b8.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "P2iXEfxavJX4fyh-L",
-      });
-   })();
-</script>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b2a5fc80b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "P2iXEfxavJX4fyh-L",
+        });
+      })();
+    </script>
+  </head>
 
-<body>
+  <body>
     <section id="landing-page">
-        <nav>
-            <figure>
-                <img id="personal-logo" src="assets/logo.svg" alt="">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-
-                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
-
-                </li>
-                <li class="nav__link">
-
-                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Project</a>
-
-                </li>
-                <li class="nav__link" onclick="toggleModal()">
-
-                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
-
-                </li>
-                <li class="nav__link click">
-
-                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i
-                            class="fa-solid fa-circle-half-stroke"></i></a>
-
-                </li>
-            </ul>
-
-
-        </nav>
-        <header class="header">
-            <div class="header__content">
-                <h1 class="title">Hey</h1>
-                <h1 class="title orange">I'm Kojo.</h1>
-                <p class="header__para">I'm an <b class="orange">Innovative Frontend Software Engineer</b> dedicated to
-                    creating seamless, high-performance web experiences that inspire and transform.
-                    <br>
-                    Here is a bit more <b class="orange click" onclick="toggleModal()">about me</b> .
-                </p>
-                <div class="social__list">
-                    <a href="www.linkedin.com/in/
-kojo-abdulai-a02b8a338" target="_blank" class="social__link click"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/abdujo" target="_blank" class="social__link click"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="assets/Kojo_Res.pdf" target="_blank" class="social__link click"><i
-                            class="fa-solid fa-file-pdf"></i></a>
-
-                </div>
-            </div>
-
-        </header>
-        <button class="mail__btn click" onclick="toggleModal()">
-            <i class="fa-regular fa-envelope"></i>
-        </button>
-        <a href="#Projects" class="scroll">
-            <div class="scroll__icon click"></div>
-
-
-
-        </a>
-        <div class="modal">
-            <div class="modal__half modal__about">
-                <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
-                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
-                <p class="modal__para">I'm an Innovative <b class="orange">Frontend Software Engineer</b> dedicated to
-                    creating seamless, high performance web experiences that <b class="orange"> inspire</b> and <b
-                        class="orange">transform</b>.
-                    <br>
-                    I currently solve extremely difficult engineering problems and learn from a team consisting of some
-                    of the most <b class="orange">talented</b> and <b class="orange">experienced</b> Software engineers
-                    everyday.
-                </p>
-                <div class="modal__languages">
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                            alt="">
-                        <span class="language__name">HTML</span>
-                    </figure>
-
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
-
-                            <span class="language__name">CSS</span>
-                    </figure>
-
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
-
-                            <span class="language__name">JavaScript</span>
-                    </figure>
-
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
-
-                            <span class="language__name">React</span>
-                    </figure>
-
-                </div>
-            </div>
-            <div class="modal__half modal__contact">
-                <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
-                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
-                <h3 class="modal__sub-title modal__sub-title--contact">I am currently open to new oppotunities.</h3>
-                <form action="" id="contact__form" onsubmit="contact(event)">
-                    <div class="form__item">
-                        <label  class="form__item--lable">Name</label>
-                        <input type="text" class="input" name="user_name" >
-                    </div>
-                    <div class="form__item">
-                        <label  class="form__item--lable">Email</label>
-                        <input type="email" class="input" name="user_email" >
-                    </div>
-                    <div class="form__item">
-                        <label  class="form__item--lable">Message</label>
-                        <textarea name="message" id="" class="input" type="text" ></textarea>
-                    </div>
-                    <button id="contact__submit" class="form__submit">send it my way</button>
-                </form>
-                <div class="modal__overlay modal__overlay--loading">
-                    <i class="fa-solid fa-spinner"></i>
-                </div>
-                <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking to you soon</div>
-            </div>
+      <nav>
+        <figure>
+          <img id="personal-logo" src="assets/logo.svg" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Project</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I'm Kojo.</h1>
+          <p class="header__para">
+            I'm an
+            <b class="orange">Innovative Frontend Software Engineer</b>
+            dedicated to creating seamless, high-performance web experiences
+            that inspire and transform.
+            <br />
+            Here is a bit more
+            <b class="orange click" onclick="toggleModal()">about me</b> .
+          </p>
+          <div class="social__list">
+            <a
+              href="www.linkedin.com/in/
+kojo-abdulai-a02b8a338"
+              target="_blank"
+              class="social__link click"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/abdujo"
+              target="_blank"
+              class="social__link click"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="assets/Kojo_Res.pdf"
+              target="_blank"
+              class="social__link click"
+              ><i class="fa-solid fa-file-pdf"></i
+            ></a>
+          </div>
         </div>
+      </header>
+      <a href="#">
 
+          <button class="mail__btn click" onclick="toggleModal()">
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+      </a>
+      <a href="#Projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Engineer.
+          </h4>
+          <p class="modal__para">
+            I'm an Innovative
+            <b class="orange">Frontend Software Engineer</b> dedicated to
+            creating seamless, high performance web experiences that
+            <b class="orange"> inspire</b> and <b class="orange">transform</b>.
+            <br />
+            I currently solve extremely difficult engineering problems and learn
+            from a team consisting of some of the most
+            <b class="orange">talented</b> and
+            <b class="orange">experienced</b> Software engineers everyday.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+
+              <span class="language__name">CSS</span>
+            </figure>
+
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+              />
+
+              <span class="language__name">JavaScript</span>
+            </figure>
+
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+              />
+
+              <span class="language__name">React</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i
+            class="fa-solid fa-xmark modal__exit click"
+            onclick="toggleModal()"
+          ></i>
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I am currently open to new oppotunities.
+          </h3>
+          <form action="" id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--lable">Name</label>
+              <input type="text" class="input" name="user_name" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--lable">Email</label>
+              <input type="email" class="input" name="user_email" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--lable">Message</label>
+              <textarea
+                name="message"
+                id=""
+                class="input"
+                type="text"
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon
+          </div>
+        </div>
+      </div>
     </section>
     <section id="projects">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">
-                    Her are some of my <span class="orange">projects</span>
-                </h1>
-                <ul class="project__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="assets/google mockup.png" alt="" class="project__img">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">E-Commerce</h3>
-                                <h4 class="project__description--sub-title">Html, CSS, JavaScript, React</h4>
-                                <p class="project__description--para">
-                                    Kojo E-Commerce is a fully responsive, front-end–only online store built with HTML5,
-                                    CSS3 (Flexbox/Grid), and vanilla JavaScript (ES6+). It showcases a complete shopping
-                                    experience—from product browsing and dynamic filtering to a client-side shopping
-                                    cart (persisted via LocalStorage) and a simulated checkout flow.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/abdujo" target="_blank"
-                                        class="project__description--link"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://abdujo.github.io/Kojo_E-Commerce/" target="_blank"
-                                        class="project__description--link"><i class="fa-solid fa-link"></i></a>
-                                    <a href="" class="project__description--link"></a>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                    </li>
-                    <ul class="project__list">
-                        <li class="project">
-                            <div class="project__wrapper">
-                                <img src="assets/google mockup.png" alt="" class="project__img">
-                                <div class="project__wrapper--bg"></div>
-                                <div class="project__description">
-                                    <h3 class="project__description--title">E-Portfolio</h3>
-                                    <h4 class="project__description--sub-title">Html, CSS, JavaScript, React</h4>
-                                    <p class="project__description--para">
-                                        A single-page, mobile-first personal portfolio created with HTML5, CSS3
-                                        (Flexbox/Grid), and vanilla JavaScript (ES6+), hosted on GitHub Pages. This site
-                                        highlights my professional journey—introducing who I am, what I know, and the
-                                        projects I’ve completed—through a polished, easy-to-navigate interface. It
-                                        demonstrates my ability to build a fully responsive, accessible front-end
-                                        application from scratch without relying on any external frameworks.
-                                    </p>
-                                    <div class="project__description--links">
-                                        <a href="https://github.com/abdujo" target="_blank"
-                                            class="project__description--link"><i class="fa-brands fa-github"></i></a>
-                                        <a href="https://abdujo.github.io/Kojo_E-Portfolio/"
-                                            class="project__description--link"><i class="fa-solid fa-link"></i></a>
-                                        <a href="" class="project__description--link"></a>
-
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </li>
-                        <ul class="project__list">
-                            <li class="project">
-                                <div class="project__wrapper">
-                                    <img src="assets/google mockup.png" alt="" class="project__img">
-                                    <div class="project__wrapper--bg"></div>
-                                    <div class="project__description">
-                                        <h3 class="project__description--title">Final Project</h3>
-                                        <h4 class="project__description--sub-title">Html, CSS, JavaScript, React</h4>
-                                        <p class="project__description--para">
-                                            Treact is a single-page, responsive marketing landing site designed to
-                                            showcase “Beautiful React Templates” (as a conceptual offering). Although
-                                            the name implies React, this project was built using plain HTML5, CSS3, and
-                                            vanilla JavaScript—no React framework was actually coded. Its purpose is to
-                                            demonstrate a polished, professional front-end layout, highlighting sections
-                                            such as a hero banner, feature overview, pricing tiers, customer
-                                            testimonials, and a contact form. Deployed on GitHub Pages, it underscores
-                                            my ability to assemble and style a modern, mobile-first web page from
-                                            scratch.
-                                        </p>
-                                        <div class="project__description--links">
-                                            <a href="https://github.com/abdujo" target="_blank"
-                                                class="project__description--link"><i
-                                                    class="fa-brands fa-github"></i></a>
-                                            <a href="https://abdujo.github.io/My_Final_-Project/" target="_blank"
-                                                class="project__description--link"><i class="fa-solid fa-link"></i></a>
-                                            <a href="" class="project__description--link"></a>
-
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-                            </li>
-
-            </div>
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Her are some of my <span class="orange">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="assets/google mockup.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">E-Commerce</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__description--para">
+                    Kojo E-Commerce is a fully responsive, front-end–only online
+                    store built with HTML5, CSS3 (Flexbox/Grid), and vanilla
+                    JavaScript (ES6+). It showcases a complete shopping
+                    experience—from product browsing and dynamic filtering to a
+                    client-side shopping cart (persisted via LocalStorage) and a
+                    simulated checkout flow.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/abdujo"
+                      target="_blank"
+                      class="project__description--link"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      href="https://abdujo.github.io/Kojo_E-Commerce/"
+                      target="_blank"
+                      class="project__description--link"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                    <a href="" class="project__description--link"></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="assets/google mockup.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">E-Portfolio</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__description--para">
+                    A single-page, mobile-first personal portfolio created with
+                    HTML5, CSS3 (Flexbox/Grid), and vanilla JavaScript (ES6+),
+                    hosted on GitHub Pages. This site highlights my professional
+                    journey—introducing who I am, what I know, and the projects
+                    I’ve completed—through a polished, easy-to-navigate
+                    interface. It demonstrates my ability to build a fully
+                    responsive, accessible front-end application from scratch
+                    without relying on any external frameworks.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/abdujo"
+                      target="_blank"
+                      class="project__description--link"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      href="https://abdujo.github.io/Kojo_E-Portfolio/"
+                      class="project__description--link"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                    <a href="" class="project__description--link"></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="assets/google mockup.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Final Project</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__description--para">
+                    Treact is a single-page, responsive marketing landing site
+                    designed to showcase “Beautiful React Templates” (as a
+                    conceptual offering). Although the name implies React, this
+                    project was built using plain HTML5, CSS3, and vanilla
+                    JavaScript—no React framework was actually coded. Its
+                    purpose is to demonstrate a polished, professional front-end
+                    layout, highlighting sections such as a hero banner, feature
+                    overview, pricing tiers, customer testimonials, and a
+                    contact form. Deployed on GitHub Pages, it underscores my
+                    ability to assemble and style a modern, mobile-first web
+                    page from scratch.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/abdujo"
+                      target="_blank"
+                      class="project__description--link"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      href="https://abdujo.github.io/My_Final_-Project/"
+                      target="_blank"
+                      class="project__description--link"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                    <a href="" class="project__description--link"></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="row footer__row">
-                <a href="#" class="footer__anchor">
-                    <figure class="footer__logo">
-                        <img src="assets/logo.svg" alt="" class="footer__logo--img">
-                    </figure>
-                    <span class="footer__logo--popper">
-                        Top <i class="fa-solid fa-arrow-up"></i>
-                    </span>
-                </a>
-                <div class="footer__social--list">
-                    <a href="" class="footer__social--link link__hover-effect link__hover-effect--white">GitHub</a>
-                    <a href="" class="footer__social--link link__hover-effect link__hover-effect--white">linkedIn</a>
-                    <a href="" class="footer__social--link link__hover-effect link__hover-effect--white">Contact</a>
-                    <a href="" class="footer__social--link link__hover-effect link__hover-effect--white">Resume</a>
-                </div>
-                <div class="footer__copyright">Copyright © 2025 Kojo Abdulai.</div>
-
-            </div>
+      <div class="container">
+        <div class="row footer__row">
+          <a href="#" class="footer__anchor">
+            <figure class="footer__logo">
+              <img src="assets/logo.svg" alt="" class="footer__logo--img" />
+            </figure>
+            <span class="footer__logo--popper">
+              Top <i class="fa-solid fa-arrow-up"></i>
+            </span>
+          </a>
+          <div class="footer__social--list">
+            <a
+              href=""
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >GitHub</a
+            >
+            <a
+              href=""
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >linkedIn</a
+            >
+            <a
+              href=""
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >Contact</a
+            >
+            <a
+              href=""
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              >Resume</a
+            >
+          </div>
+          <div class="footer__copyright">Copyright © 2025 Kojo Abdulai.</div>
         </div>
-        </div>
+      </div>
     </footer>
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>

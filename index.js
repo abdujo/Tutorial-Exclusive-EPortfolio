@@ -24,6 +24,23 @@
 // then fuction and catch function
 // the let function
 // the onclick function
+// why do we add open and close brackets to the function toggleModal and toggleContrast
+
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList.add('dark-theme');
+    } else
+   document.body.classList.remove('dark-theme');
+}
+
+
+
+
+
 function contact(event) {
     event.preventDefault();
 
@@ -49,14 +66,14 @@ function contact(event) {
 
 }
 
-let isModalOpen = false;
+
 function toggleModal() {
-   if( isModalOpen) {
+    if (isModalOpen) {
         isModalOpen = false;
-       return document.body.classList.remove('modal--open');
-        
+        return document.body.classList.remove('modal--open');
+
     }
-isModalOpen = true;
-document.body.classList.add('modal--open');
+    isModalOpen = true;
+    document.body.classList.add('modal--open');
 
 }
